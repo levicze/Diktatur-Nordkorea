@@ -214,6 +214,18 @@ footer {
   margin-top: 4rem; /* Add space above footer */
 }
 
+footer .pdf-link {
+    color: #5a6a7a; /* Use accent color for the PDF link */
+    font-weight: bold; /* Make the link text bold */
+    text-decoration: none; /* Remove default underline */
+    margin-left: 1rem; /* Add space to the left of the link */
+    /* Add hover effect if desired */
+}
+
+footer .pdf-link:hover {
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
 a {
   color: #5a6a7a; /* Muted deep blue-gray accent for general links */
   text-decoration: none;
