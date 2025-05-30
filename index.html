@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diktatur Nordkorea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>Diktatur Nordkorea – Zeitleiste & Herrscherprofile</header>
+  <section>
+    <h2>Zeitleiste</h2>
+    <div class="timeline" id="timeline"></div>
+
+    <div class="diktatoren">
+      <h2>Die drei Diktatoren</h2>
+      <div class="diktator" id="kimIlsung"></div>
+      <div class="diktator" id="kimJongil"></div>
+      <div class="diktator" id="kimJongun"></div>
+    </div>
+  </section>
+  <footer>
+    Quellen sind direkt bei den Inhalten verlinkt.
+  </footer>
+
+  <script>
+    const timelineData = [
+      { year: "1910", text: "Japan annektiert Korea und macht es bis 1945 zu seiner Kolonie.", source: "https://de.wikipedia.org/wiki/Japanische_Kolonialherrschaft_in_Korea" },
+      { year: "1945", text: "Teilung Koreas nach dem 2. Weltkrieg entlang des 38. Breitengrades.", source: "https://de.wikipedia.org/wiki/Korea_unter_geteilter_Besatzung" },
+      { year: "1948", text: "Gründung der Demokratischen Volksrepublik Korea (Nordkorea).", source: "https://de.wikipedia.org/wiki/Nordkorea" },
+      { year: "1950", text: "Nordkorea startet den Koreakrieg.", source: "https://de.wikipedia.org/wiki/Koreakrieg" },
+      { year: "1953", text: "Waffenstillstand und Einrichtung der Demilitarisierten Zone.", source: "https://de.wikipedia.org/wiki/Entmilitarisierte_Zone_(Korea)" },
+      { year: "1972", text: "Kim Il-sung wird Präsident, Juche-Ideologie gefestigt.", source: "https://de.wikipedia.org/wiki/Juche" },
+      { year: "1994", text: "Tod von Kim Il-sung, Machtübergabe an Kim Jong-il.", source: "https://de.wikipedia.org/wiki/Kim_Il-sung" },
+      { year: "2006", text: "Erster unterirdischer Atomtest durch Nordkorea.", source: "https://de.wikipedia.org/wiki/Nordkoreanisches_Kernwaffenprogramm" },
+      { year: "2011", text: "Tod Kim Jong-ils, Nachfolger wird Kim Jong-un.", source: "https://de.wikipedia.org/wiki/Kim_Jong-un" },
+      { year: "2017", text: "Interkontinentalraketentest und stärkster Atomwaffentest.", source: "https://de.wikipedia.org/wiki/Nordkoreanisches_Kernwaffenprogramm" },
+      { year: "2018", text: "Gipfeltreffen mit Südkorea und USA.", source: "https://de.wikipedia.org/wiki/Nordkorea-Politik_von_Kim_Jong-un" },
+      { year: "2022", text: "Nordkorea erklärt sich offiziell zur irreversiblen Atommacht.", source: "https://www.hrw.org/de/news/2022/09/09/nordkorea-gesetz-zur-nuklearpolitik" },
+      { year: "2024", text: "Ziel der Wiedervereinigung wird aus Verfassung gestrichen.", source: "https://www.tagesschau.de/ausland/asien/nordkorea-verfassung-wiedervereinigung-100.html" },
+    ];
+
+    const profiles = {
+      kimIlsung: `
+        <h3>Kim Il-sung (1912–1994)</h3>
+        <p>Kim Il-sung war der Gründer Nordkoreas und regierte das Land von 1948 bis zu seinem Tod 1994 als
+        erster "Großer Führer". Nach dem Zweiten Weltkrieg errichtete er mit Unterstützung der Sowjetunion
+        eine kommunistische Diktatur. Er schuf ein System, in dem nur eine Partei herrschte und er selbst
+        wie eine göttliche Figur verehrt wurde. Seine Ideologie, die er <a href='https://de.wikipedia.org/wiki/Juche' target='_blank'>"Juche"</a> nannte, betonte die
+        Unabhängigkeit und Selbstständigkeit Nordkoreas. Um seine Macht zu festigen, verbannte er
+        Tausende Menschen in Arbeitslager und ließ politische Gegner verfolgen. Vor seinem Tod
+        bereitete er die Machtübergabe an seinen Sohn Kim Jong-il vor und begründete damit die
+        Herrschaft der Kim-Familie, die bis in die Gegenwart andauert.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Il-sung' target='_blank'>Quelle</a></p>
+      `,
+      kimJongil: `
+        <h3>Kim Jong-il (1941–2011)</h3>
+        <p>Kim Jong-il, der Sohn Kim Il-sungs, trat 1994 als "Geliebter Führer" die Nachfolge an und regierte
+        bis zu seinem Tod 2011. In den 1990er-Jahren durchlebte Nordkorea eine <a href='https://de.wikipedia.org/wiki/Hungersnot_in_Nordkorea_1994%E2%80%931998' target='_blank'>verheerende Hungersnot</a>,
+        als die Sowjetunion ihre Unterstützung einstellte. Trotz dieser schweren Krise beharrte Kim Jong-il
+        auf dem strengen diktatorischen Kurs. Er erhob das Militär zum wichtigsten Pfeiler des Staates
+        und stattete es mit umfangreichen Mitteln aus. Während seiner Herrschaft begann Nordkorea mit
+        der Entwicklung von Atomwaffen und führte 2006 den ersten <a href='https://de.wikipedia.org/wiki/Nordkoreanisches_Kernwaffenprogramm#Kernwaffentests' target='_blank'>Atomtest</a> durch. Die Bevölkerung
+        lebte unter ständiger Beobachtung und war jeglicher politischer Rechte beraubt. Nach seinem Tod
+        übernahm sein Sohn Kim Jong-un die Macht.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Jong-il' target='_blank'>Quelle</a></p>
+      `,
+      kimJongun: `
+        <h3>Kim Jong-un (geb. 1984)</h3>
+        <p>Kim Jong-un trat 2011 im zarten Alter von 27 Jahren die Nachfolge seines Vaters an. Um seine
+        Herrschaft zu festigen, ließ er 2013 seinen eigenen Onkel <a href='https://en.wikipedia.org/wiki/Jang_Song-thaek' target='_blank'>Jang Song-thaek</a> hinrichten, der angeblich
+        gegen ihn konspiriert hatte. Unter seiner Führung entwickelte Nordkorea Raketen, die andere
+        Kontinente erreichen können, und erklärte sich 2022 zur Atommacht. Im Jahr 2018 kam es zu
+        historischen Gipfeltreffen mit den Präsidenten Südkoreas und der USA, doch blieben konkrete
+        Verbesserungen aus. Wie seine Vorgänger führt er eine unerbittliche Diktatur: Die Bevölkerung
+        steht unter ständiger Überwachung, Kritiker verschwinden in Arbeitslagern, und Meinungsfreiheit
+        ist nicht existent. Nordkorea zählt weiterhin zu den Ländern mit den massivsten Einschränkungen
+        der Menschenrechte.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Jong-un' target='_blank'>Quelle</a></p>
+      `
+    };
+
+    const timelineEl = document.getElementById("timeline");
+    timelineData.forEach(event => {
+      const entry = document.createElement("div");
+      entry.className = "timeline-entry";
+      entry.innerHTML = `<h3>${event.year}</h3><p>${event.text} <a class='source-btn' href='${event.source}' target='_blank'>Quelle</a></p>`;
+      timelineEl.appendChild(entry);
+    });
+
+    document.getElementById("kimIlsung").innerHTML = profiles.kimIlsung;
+    document.getElementById("kimJongil").innerHTML = profiles.kimJongil;
+    document.getElementById("kimJongun").innerHTML = profiles.kimJongun;
+  </script>
+</body>
+</html>
