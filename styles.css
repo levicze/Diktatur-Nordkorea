@@ -1,8 +1,10 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Lato', sans-serif; /* Changed font to Lato */
   background: #f8f8f8; /* Very light cream-gray */
   color: #333333; /* Dark gray for main text */
+  font-size: 1rem; /* Base font size */
+  line-height: 1.6; /* Improved line spacing */
 }
 
 header {
@@ -10,14 +12,34 @@ header {
   padding: 2rem;
   text-align: center;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700; /* Use bold weight for header */
   color: #333333; /* Dark gray */
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Relative to header font-size */
+}
+
+header .subtitle {
+    margin-top: 0.5rem;
+    font-size: 0.8em; /* Smaller than main title */
+    color: #5a6a7a; /* Muted deep blue-gray accent */
+}
+
 section {
-  padding: 2rem;
+  padding: 2rem; /* Keep vertical padding */
+  padding-left: 1rem; /* Add horizontal padding */
+  padding-right: 1rem; /* Add horizontal padding */
   max-width: 1000px;
   margin: auto;
+}
+
+h2 {
+    color: #5a6a7a; /* Muted deep blue-gray accent */
+    border-bottom: 1px solid #cccccc; /* Subtle bottom border */
+    padding-bottom: 0.5rem; /* Space between text and border */
+    margin-bottom: 2rem; /* Space below heading */
 }
 
 .timeline {
@@ -46,6 +68,16 @@ section {
   background-color: #ffffff; /* Clean white */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-entry:nth-child(even) {
+    background-color: #f0f0f0; /* Slightly different background for alternating entries */
+}
+
+.timeline-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .timeline-entry::before {
@@ -80,24 +112,29 @@ section {
 .timeline-entry h3 {
   margin: 0;
   color: #5a6a7a; /* Muted deep blue-gray accent */
+  font-weight: 700; /* Use bold weight for headings */
+  font-size: 1.2em; /* Make year slightly larger */
+  margin-bottom: 0.5rem; /* Add space below heading */
 }
 
 .timeline-entry p {
-  margin-top: 5px;
+  margin-top: 0; /* Adjusted margin top */
   color: #333333; /* Dark gray for timeline text */
+  line-height: 1.6; /* Improved line spacing for timeline paragraphs */
+  margin-bottom: 0;
 }
 
 .timeline-entry .source-btn {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .timeline-entry a {
-  color: #5a6a7a; /* Muted deep blue-gray accent for links in timeline */
-  text-decoration: none;
+    color: #5a6a7a; /* Muted deep blue-gray accent for links in timeline */
+    text-decoration: none;
 }
 
 .timeline-entry a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .source-btn {
@@ -122,11 +159,50 @@ section {
 
 .diktator {
   background: #ffffff; /* Clean white */
-  padding: 1rem;
-  margin-bottom: 2rem;
+  padding: 1.5rem; /* Keep increased padding */
+  margin-bottom: 2rem; /* Restore bottom margin */
   border-left: 5px solid #5a6a7a; /* Muted deep blue-gray accent */
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px; /* Keep slightly more rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Keep slightly stronger shadow */
+  color: #333333; /* Ensure text color is dark for readability */
+  width: auto;
+  min-width: 0;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diktator:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.diktator img {
+    max-width: 100px; /* Adjust image width as needed */
+    height: auto;
+    float: left; /* Float image to the left of text */
+    margin-right: 1.5rem; /* Add space between image and text */
+    border-radius: 8px; /* Keep border-radius of the box */
+    border: 2px solid #e0e0e0; /* Add a thin light gray border */
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diktator img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.diktator h3 {
+  color: #5a6a7a; /* Muted deep blue-gray accent for headings */
+  margin-top: 0;
+  font-weight: 700; /* Use bold weight for headings */
+  margin-bottom: 0.5rem; /* Add space below heading */
+}
+
+.diktator p {
+    margin-bottom: 0;
+    line-height: 1.6; /* Improved line spacing for dictator paragraphs */
+    overflow: hidden;
 }
 
 footer {
@@ -134,6 +210,8 @@ footer {
   padding: 2rem;
   font-size: 0.9rem;
   color: #333333; /* Dark gray for footer text */
+  border-top: 1px solid #cccccc; /* Add top border to footer */
+  margin-top: 4rem; /* Add space above footer */
 }
 
 a {
@@ -142,5 +220,14 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+    color: #333333; /* Darken color on hover instead of underline */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.section-divider {
+    border: none;
+    height: 1px; /* Thickness of the line */
+    background-color: #cccccc; /* Color matching the classic palette */
+    margin: 4rem auto; /* Vertical spacing and centering */
+    width: 50%; /* Width of the divider line */
 } 

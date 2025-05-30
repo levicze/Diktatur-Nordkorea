@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diktatur Nordkorea</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>Diktatur Nordkorea</header>
+  <header>
+    <h1>Diktatur Nordkorea</h1>
+    <p class="subtitle">Ein Blick hinter die Mauern des Schweigens</p>
+  </header>
   <section>
     <h2>Zeitleiste</h2>
     <div class="timeline" id="timeline"></div>
+
+    <hr class="section-divider">
 
     <div class="diktatoren">
       <h2>Herrschaft - Die drei Diktatoren</h2>
@@ -42,6 +48,7 @@
 
     const profiles = {
       kimIlsung: `
+        <img src="img/Kim-Il-sung.png" alt="Kim Il-sung">
         <h3>Kim Il-sung (1912–1994)</h3>
         <p>Kim Il-sung war der Gründer Nordkoreas und regierte das Land von 1948 bis zu seinem Tod 1994 als
         erster "Großer Führer". Nach dem Zweiten Weltkrieg errichtete er mit Unterstützung der Sowjetunion
@@ -53,6 +60,7 @@
         Herrschaft der Kim-Familie, die bis in die Gegenwart andauert.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Il-sung' target='_blank'>Quelle</a></p>
       `,
       kimJongil: `
+        <img src="img/Kim-Jong-Il.png" alt="Kim Jong-il">
         <h3>Kim Jong-il (1941–2011)</h3>
         <p>Kim Jong-il, der Sohn Kim Il-sungs, trat 1994 als "Geliebter Führer" die Nachfolge an und regierte
         bis zu seinem Tod 2011. In den 1990er-Jahren durchlebte Nordkorea eine <a href='https://de.wikipedia.org/wiki/Hungersnot_in_Nordkorea_1994%E2%80%931998' target='_blank'>verheerende Hungersnot</a>,
@@ -64,6 +72,7 @@
         übernahm sein Sohn Kim Jong-un die Macht.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Jong-il' target='_blank'>Quelle</a></p>
       `,
       kimJongun: `
+        <img src="img/Kim-Jong-un.png" alt="Kim Jong-un">
         <h3>Kim Jong-un (geb. 1984)</h3>
         <p>Kim Jong-un trat 2011 im zarten Alter von 27 Jahren die Nachfolge seines Vaters an. Um seine
         Herrschaft zu festigen, ließ er 2013 seinen eigenen Onkel <a href='https://en.wikipedia.org/wiki/Jang_Song-thaek' target='_blank'>Jang Song-thaek</a> hinrichten, der angeblich
