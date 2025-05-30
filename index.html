@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>Diktatur Nordkorea – Zeitleiste & Herrscherprofile</header>
+  <header>Diktatur Nordkorea</header>
   <section>
     <h2>Zeitleiste</h2>
     <div class="timeline" id="timeline"></div>
@@ -25,19 +25,19 @@
 
   <script>
     const timelineData = [
-      { year: "1910", text: "Japan annektiert Korea und macht es bis 1945 zu seiner Kolonie.", source: "https://de.wikipedia.org/wiki/Japanische_Kolonialherrschaft_in_Korea" },
-      { year: "1945", text: "Teilung Koreas nach dem 2. Weltkrieg entlang des 38. Breitengrades.", source: "https://de.wikipedia.org/wiki/Korea_unter_geteilter_Besatzung" },
-      { year: "1948", text: "Gründung der Demokratischen Volksrepublik Korea (Nordkorea).", source: "https://de.wikipedia.org/wiki/Nordkorea" },
-      { year: "1950", text: "Nordkorea startet den Koreakrieg.", source: "https://de.wikipedia.org/wiki/Koreakrieg" },
-      { year: "1953", text: "Waffenstillstand und Einrichtung der Demilitarisierten Zone.", source: "https://de.wikipedia.org/wiki/Entmilitarisierte_Zone_(Korea)" },
-      { year: "1972", text: "Kim Il-sung wird Präsident, Juche-Ideologie gefestigt.", source: "https://de.wikipedia.org/wiki/Juche" },
-      { year: "1994", text: "Tod von Kim Il-sung, Machtübergabe an Kim Jong-il.", source: "https://de.wikipedia.org/wiki/Kim_Il-sung" },
-      { year: "2006", text: "Erster unterirdischer Atomtest durch Nordkorea.", source: "https://de.wikipedia.org/wiki/Nordkoreanisches_Kernwaffenprogramm" },
-      { year: "2011", text: "Tod Kim Jong-ils, Nachfolger wird Kim Jong-un.", source: "https://de.wikipedia.org/wiki/Kim_Jong-un" },
-      { year: "2017", text: "Interkontinentalraketentest und stärkster Atomwaffentest.", source: "https://de.wikipedia.org/wiki/Nordkoreanisches_Kernwaffenprogramm" },
-      { year: "2018", text: "Gipfeltreffen mit Südkorea und USA.", source: "https://de.wikipedia.org/wiki/Nordkorea-Politik_von_Kim_Jong-un" },
-      { year: "2022", text: "Nordkorea erklärt sich offiziell zur irreversiblen Atommacht.", source: "https://www.hrw.org/de/news/2022/09/09/nordkorea-gesetz-zur-nuklearpolitik" },
-      { year: "2024", text: "Ziel der Wiedervereinigung wird aus Verfassung gestrichen.", source: "https://www.tagesschau.de/ausland/asien/nordkorea-verfassung-wiedervereinigung-100.html" },
+      { year:   "1910", text: "Japan annektiert Korea", source: "https://de.wikipedia.org/wiki/Japan-Korea-Annexionsvertrag_von_1910"},
+      { year:   "1945", text: "Teilung Koreas nach dem Zweiten Weltkrieg", source: "https://www.deutschlandfunk.de/teilung-koreas-1945-grundstein-eines-konflikts-der-bis-100.html",},
+      { year:   "1948", text: "Gründung der Demokratischen Volksrepublik Korea (Nordkorea)", source: "https://de.wikipedia.org/wiki/Nordkorea#Geschichte",},
+      { year:   "1950", text: "Nordkorea startet den Koreakrieg", source: "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/korea-krieg.html",},
+      { year:   "1953", text: "Waffenstillstand und Einrichtung der DMZ", source: "https://de.wikipedia.org/wiki/Demilitarisierte_Zone_(Korea)",},
+      { year:   "1972", text: "Kim Il-sung wird Präsident, Juche-Ideologie gefestigt", source: "https://de.wikipedia.org/wiki/Kim_Il-sung#Staatspr%C3%A4sident_und_Chuch%E2%80%99e-Ideologie",},
+      { year:   "1994", text: "Tod von Kim Il-sung, Machtübergabe an Kim Jong-il", source: "https://de.wikipedia.org/wiki/Nordkorea#Geschichte",},
+      { year:   "2006", text: "Erster unterirdischer Atomtest Nordkoreas", source: "https://www.tagesschau.de/multimedia/sendung/tagesthemen/video-ts-35604.html#atomtest2006",},
+      { year:   "2011", text: "Tod Kim Jong-ils, Nachfolger Kim Jong-un", source: "https://de.wikipedia.org/wiki/Nordkorea#Geschichte", },
+      { year:   "2017", text: "Interkontinentalraketentest und stärkster Atomwaffentest", source: "https://www.zeit.de/politik/2017-09/nordkorea-kim-jong-un-raketentest-wasserstoffbombe",},
+      { year:   "2018", text: "Gipfeltreffen mit Südkorea und USA", source: "https://www.britannica.com/biography/Kim-Jong-Eun#2018-summits",},
+      { year:   "2022", text: "Nordkorea erklärt sich offiziell zur irreversiblen Atommacht", source: "https://www.tagesschau.de/ausland/asien/nordkorea-atomwaffenpolitik-101.html",},
+      { year:   "2024", text: "Ziel der Wiedervereinigung wird aus Verfassung gestrichen", source: "https://www.tagesspiegel.de/internationales/wiedervereinigung-nicht-mehr-moglich-kim-jong-un-will-sudkorea-in-verfassung-als-hauptfeind-verankern-11056801.html"},
     ];
 
     const profiles = {
