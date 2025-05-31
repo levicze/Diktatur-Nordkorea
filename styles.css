@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif; /* Changed font to Lato */
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   background: #f8f8f8; /* Very light cream-gray */
   color: #333333; /* Dark gray for main text */
   font-size: 1rem; /* Base font size */
@@ -215,25 +218,33 @@ footer {
 }
 
 footer .pdf-link {
-    color: #5a6a7a; /* Use accent color for the PDF link */
-    font-weight: bold; /* Make the link text bold */
-    text-decoration: none; /* Remove default underline */
-    margin-left: 1rem; /* Add space to the left of the link */
-    /* Add hover effect if desired */
+    color: #5a6a7a;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 1rem;
+    background-color: transparent;
+    padding: 0;
 }
 
 footer .pdf-link:hover {
-    text-decoration: underline; /* Add underline on hover for clarity */
+    text-decoration: underline;
+    background-color: transparent;
+    color: #5a6a7a;
 }
 
 a {
   color: #5a6a7a; /* Muted deep blue-gray accent for general links */
   text-decoration: none;
+  background-color: rgba(90, 106, 122, 0.1); /* Very light background */
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
 }
 
 a:hover {
-    color: #333333; /* Darken color on hover instead of underline */
-    text-decoration: none; /* Remove underline on hover */
+  color: #ffffff; /* White text on hover */
+  background-color: #5a6a7a; /* Full background color on hover */
+  text-decoration: none;
 }
 
 .section-divider {
