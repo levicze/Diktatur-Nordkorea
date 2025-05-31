@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif; /* Changed font to Lato */
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   background: #f8f8f8; /* Very light cream-gray */
   color: #333333; /* Dark gray for main text */
   font-size: 1rem; /* Base font size */
