@@ -3,103 +3,211 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diktatur Nordkorea – Ein Blick hinter die Mauern des Schweigens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-  <title>Diktatur Nordkorea</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Diktatur Nordkorea</h1>
     <p class="subtitle">Ein Blick hinter die Mauern des Schweigens</p>
   </header>
+
   <section>
-    <h2>Zeitleiste</h2>
-    <div class="timeline" id="timeline"></div>
-
-    <hr class="section-divider">
-
-    <div class="diktatoren">
-      <h2>Herrschaft - Die drei Diktatoren</h2>
-      <div class="diktator" id="kimIlsung"></div>
-      <div class="diktator" id="kimJongil"></div>
-      <div class="diktator" id="kimJongun"></div>
+    <h2 class="section-title">Zeitleiste</h2>
+    <div class="timeline">
+      <!-- Zeitleiste bleibt unverändert, ohne Bilder -->
+      <div class="timeline-entry">
+        <h3>1910</h3>
+        <p>Japan annektiert Korea <a class="source-btn" href="https://de.wikipedia.org/wiki/Japan-Korea-Annexionsvertrag_von_1910" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>1945</h3>
+        <p>Teilung Koreas nach dem Zweiten Weltkrieg <a class="source-btn" href="https://www.deutschlandfunk.de/teilung-koreas-1945-grundstein-eines-konflikts-der-bis-100.html" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>1948</h3>
+        <p>Gründung der Demokratischen Volksrepublik Korea (Nordkorea) <a class="source-btn" href="https://de.wikipedia.org/wiki/Nordkorea#Geschichte" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>1950</h3>
+        <p>Nordkorea startet den Koreakrieg <a class="source-btn" href="https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/korea-krieg.html" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>1953</h3>
+        <p>Waffenstillstand und Einrichtung der DMZ <a class="source-btn" href="https://de.wikipedia.org/wiki/Demilitarisierte_Zone_(Korea)" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>1972</h3>
+        <p>Kim Il-sung wird Präsident, Juche-Ideologie gefestigt <a class="source-btn" href="https://de.wikipedia.org/wiki/Kim_Il-sung#Staatspr%C3%A4sident_und_Chuch%E2%80%99e-Ideologie" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>1994</h3>
+        <p>Tod von Kim Il-sung, Machtübergabe an Kim Jong-il <a class="source-btn" href="https://de.wikipedia.org/wiki/Nordkorea#Geschichte" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2006</h3>
+        <p>Erster unterirdischer Atomtest Nordkoreas <a class="source-btn" href="https://www.tagesschau.de/multimedia/sendung/tagesthemen/video-ts-35604.html#atomtest2006" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2011</h3>
+        <p>Tod Kim Jong-ils, Nachfolger Kim Jong-un <a class="source-btn" href="https://de.wikipedia.org/wiki/Nordkorea#Geschichte" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2017</h3>
+        <p>Interkontinentalraketentest und stärkster Atomwaffentest <a class="source-btn" href="https://www.zeit.de/politik/2017-09/nordkorea-kim-jong-un-raketentest-wasserstoffbombe" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2018</h3>
+        <p>Gipfeltreffen mit Südkorea und USA <a class="source-btn" href="https://www.britannica.com/biography/Kim_Jong-Eun#2018-summits" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2022</h3>
+        <p>Nordkorea erklärt sich offiziell zur irreversiblen Atommacht <a class="source-btn" href="https://www.tagesschau.de/ausland/asien/nordkorea-atomwaffenpolitik-101.html" target="_blank">Quelle</a></p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2024</h3>
+        <p>Ziel der Wiedervereinigung wird aus Verfassung gestrichen <a class="source-btn" href="https://www.tagesspiegel.de/internationales/wiedervereinigung-nicht-mehr-moglich-kim-jong-un-will-sudkorea-in-verfassung-als-hauptfeind-verankern-11056801.html" target="_blank">Quelle</a></p>
+      </div>
     </div>
   </section>
+
+  <section class="Geschichte">
+    <h2 class="geschichte-title">Geschichte Nordkoreas</h2>
+    <div class="geschichte-container">
+      <div class="geschichte-card">
+        <h3 class="geschichte-subtitle">Die Anfänge (1945-1948)</h3>
+        <p><img src="img/img01.png" alt="Koreanische Bevölkerung begrüßt sowjetische Befreier 1945" style="width:140px; float:right; margin:0 0 5px 10px;" />Die Geschichte Nordkoreas beginnt im Jahr 1945 mit dem Ende des Zweiten Weltkriegs. Nach der Kapitulation Japans wurde die koreanische Halbinsel entlang des 38. Breitengrads in eine sowjetische Besatzungszone im Norden und eine US-amerikanische im Süden geteilt. Diese Teilung bildete die Grundlage für zwei getrennte Staaten.</p>
+      </div>
+
+      <div class="geschichte-card">
+        <h3 class="geschichte-subtitle">Staatsgründung und Koreakrieg (1948-1953)</h3>
+        <p><img src="img/img02.png" alt="Flüchtlinge überqueren 1950 eine zerstörte Brücke über den Taedong" style="width:150px; float:left; margin:0 10px 5px 0;" />Am 9. September 1948 wurde im Norden die Demokratische Volksrepublik Korea (Nordkorea) unter der Führung von Kim Il-sung gegründet. Bereits kurz zuvor entstand im Süden die Republik Korea (Südkorea). Die Spannungen zwischen beiden Regierungen führten am 25. Juni 1950 zum Ausbruch des Koreakriegs, als Nordkorea versuchte, die Halbinsel mit militärischer Gewalt zu vereinen.</p>
+        <p>Der Krieg endete 1953 mit einem Waffenstillstand, ohne dass ein Friedensvertrag geschlossen wurde. Die Grenze blieb bestehen und wurde zur sogenannten Demilitarisierten Zone (DMZ) – bis heute eine der am stärksten gesicherten Grenzen der Welt.</p>
+      </div>
+
+      <div class="geschichte-card">
+        <h3 class="geschichte-subtitle">Entwicklung zur Diktatur (1953-1994)</h3>
+        <p><img src="img/img03.png" alt="Unterzeichnung des Waffenstillstandsabkommens 1953 in Panmunjom" style="width:140px; float:right; margin:0 0 5px 10px;" />In den folgenden Jahrzehnten entwickelte sich Nordkorea zu einem streng autoritären Staat mit zentral gelenkter Planwirtschaft. Kim Il-sung errichtete einen umfassenden Personenkult und die Staatsideologie Juche, die auf Autarkie und Unabhängigkeit beruhte.</p>
+      </div>
+
+      <div class="geschichte-card">
+        <h3 class="geschichte-subtitle">Die Ära Kim Jong-il (1994-2011)</h3>
+        <p><img src="img/img04.png" alt="Kim Jong-il (links) im Jahr 2000 mit Russlands Präsident Wladimir Putin" style="width:120px; float:left; margin:0 10px 5px 0;" />Nach seinem Tod 1994 übernahm sein Sohn Kim Jong-il die Führung. Die 1990er-Jahre waren geprägt von einer schweren Hungersnot und wirtschaftlicher Isolation. Dennoch verfolgte das Regime entschlossen den Aufbau eines Atomwaffenprogramms.</p>
+      </div>
+
+      <div class="geschichte-card">
+        <h3 class="geschichte-subtitle">Die Gegenwart unter Kim Jong-un (seit 2011)</h3>
+        <p><img src="img/img05.png" alt="Kim Jong-un (rechts) beim Gipfeltreffen 2018 mit Südkoreas Präsident Moon Jae-in" style="width:150px; float:right; margin:0 0 5px 10px;" />Seit 2011 führt Kim Jong-un das Land. Unter seiner Herrschaft wurden Interkontinentalraketen getestet, diplomatische Gespräche geführt – aber auch die innere Repression verschärft. Die internationale Gemeinschaft bleibt besorgt über Nordkoreas Kurs. Das Land zählt weiterhin zu den am stärksten isolierten und unterdrückten Staaten der Welt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Herrschaft – Die drei Diktatoren</h2>
+    <div class="diktator">
+      <img src="img/Kim-Il-sung.png" alt="Kim Il-sung">
+      <h3>Kim Il-sung (1912–1994)</h3>
+      <p>Kim Il-sung war der Gründer Nordkoreas und regierte das Land von 1948 bis zu seinem Tod 1994 als erster "Großer Führer". Nach dem Zweiten Weltkrieg errichtete er mit Unterstützung der Sowjetunion eine kommunistische Diktatur. Er schuf ein System, in dem nur eine Partei herrschte und er selbst wie eine göttliche Figur verehrt wurde. Seine Ideologie, die er <a href="https://de.wikipedia.org/wiki/Juche" target="_blank">"Juche"</a> nannte, betonte die Unabhängigkeit und Selbstständigkeit Nordkoreas. Um seine Macht zu festigen, verbannte er Tausende Menschen in Arbeitslager und ließ politische Gegner verfolgen. Vor seinem Tod bereitete er die Machtübergabe an seinen Sohn Kim Jong-il vor und begründete damit die Herrschaft der Kim-Familie, die bis in die Gegenwart andauert.<a class="source-btn" href="https://de.wikipedia.org/wiki/Kim_Il-sung" target="_blank">Quelle</a></p>
+    </div>
+    <div class="diktator">
+      <img src="img/Kim-Jong-Il.png" alt="Kim Jong-il">
+      <h3>Kim Jong-il (1941–2011)</h3>
+      <p>Kim Jong-il, der Sohn Kim Il-sungs, trat 1994 als "Geliebter Führer" die Nachfolge an und regierte bis zu seinem Tod 2011. In den 1990er-Jahren durchlebte Nordkorea eine <a href="https://de.wikipedia.org/wiki/Hungersnot_in_Nordkorea_1994%E2%80%931998" target="_blank">verheerende Hungersnot</a>, als die Sowjetunion ihre Unterstützung einstellte. Trotz dieser schweren Krise beharrte Kim Jong-il auf dem strengen diktatorischen Kurs. Er erhob das Militär zum wichtigsten Pfeiler des Staates und stattete es mit umfangreichen Mitteln aus. Während seiner Herrschaft begann Nordkorea mit der Entwicklung von Atomwaffen und führte 2006 den ersten <a href="https://de.wikipedia.org/wiki/Nordkoreanisches_Kernwaffenprogramm#Kernwaffentests" target="_blank">Atomtest</a> durch. Die Bevölkerung lebte unter ständiger Beobachtung und war jeglicher politischen Rechte beraubt. Nach seinem Tod übernahm sein Sohn Kim Jong-un die Macht.<a class="source-btn" href="https://de.wikipedia.org/wiki/Kim_Jong-il" target="_blank">Quelle</a></p>
+    </div>
+    <div class="diktator">
+      <img src="img/Kim-Jong-un.png" alt="Kim Jong-un">
+      <h3>Kim Jong-un (geb. 1984)</h3>
+      <p>Kim Jong-un trat 2011 im Alter von nur 27 Jahren die Nachfolge seines Vaters an. Um seine Herrschaft zu festigen, ließ er 2013 seinen eigenen Onkel <a href="https://en.wikipedia.org/wiki/Jang_Song-thaek" target="_blank">Jang Song-thaek</a> hinrichten, da dieser angeblich gegen ihn konspiriert hatte. Unter seiner Führung entwickelte Nordkorea Raketen, die andere Kontinente erreichen können, und erklärte sich 2022 zur Atommacht. Im Jahr 2018 kam es zu historischen Gipfeltreffen mit den Präsidenten Südkoreas und der USA, doch blieben konkrete Verbesserungen aus. Wie seine Vorgänger führt er eine unerbittliche Diktatur: Die Bevölkerung steht unter ständiger Überwachung, Kritiker verschwinden in Arbeitslagern, und Meinungsfreiheit ist nicht existent. Nordkorea zählt weiterhin zu den Ländern mit den massivsten Einschränkungen der Menschenrechte.<a class="source-btn" href="https://de.wikipedia.org/wiki/Kim_Jong-un" target="_blank">Quelle</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Merkmale</h2>
+    
+    <div class="content-block">
+      <h3>Repression – gewaltsame Unterdrückung von Kritik, Widerstand, politischen Bewegungen, individueller Entfaltung, individuellen Bedürfnissen</h3>
+      <p>In Nordkorea gibt es keine Meinungsfreiheit. Kritik an Kim Jong-un und seiner Familie oder generell an der Regierung wird hart bestraft. Die "Vergehen" können schon einfache Dinge sein, wie zum Beispiel der unsachgemäße Umgang mit dem Porträt des Führers oder das Infragestellen der herrschenden Partei.<a class="source-btn" href="https://de.wikipedia.org/wiki/Menschenrechtssituation_in_Nordkorea#Einschr%C3%A4nkung_der_Meinungsfreiheit" target="_blank">Quelle</a></p>
+      <p>Auch die Informationsfreiheit ist stark eingeschränkt. Den nordkoreanischen Bürgern ist es nicht erlaubt, andere als die staatlichen nordkoreanischen Medien zu nutzen. Schon das heimliche Abhören ausländischer Radiosender wird hart bestraft. Die Nutzung des mobilen Internets ist für Nordkoreaner strafbar.<a class="source-btn" href="https://de.wikipedia.org/wiki/Menschenrechtssituation_in_Nordkorea#Einschr%C3%A4nkung_der_Informationsfreiheit" target="_blank">Quelle</a></p>
+      <p>Zwar ist in der Verfassung der Demokratischen Volksrepublik Korea das Recht auf freie Religionsausübung festgeschrieben – allerdings nur, solange sich Religion nicht in die Politik einmischt. Offiziellen Angaben zufolge gehören lediglich etwa 0,2 % der Bevölkerung Religionsgemeinschaften wie dem Buddhismus oder Christentum an.<a class="source-btn" href="https://de.wikipedia.org/wiki/Menschenrechtssituation_in_Nordkorea#Einschr%C3%A4nkung_der_Glaubensfreiheit" target="_blank">Quelle</a></p>
+    </div>
+
+    <div class="content-block">
+      <h3>Legitimation – Begründung und Rechtfertigung der Herrschaft</h3>
+      <p><img src="img/img09.png" alt="Nordkoreanische Bürger verbeugen sich vor den Statuen von Kim Il-sung und Kim Jong-il" style="width:150px; float:left; margin:0 10px 5px 0;" />Die innere Rechtfertigung der Herrschaft beruht gemäß Max Weber auf traditioneller, charismatischer oder rational-legaler Autorität. In Nordkorea kombiniert das Regime diese Elemente mit modernen bürokratischen Strukturen. Gemäß Roberto Unger gibt es in der Politik einen inneren und einen äußeren Kreis. Der innere Kreis – in Nordkorea die Kernfamilie Kim – verfügt über wenige Akteure und steht für Macht und Herrschaft. Hauptsächlich strebt dieser innere Zirkel nach Macht und Wohlstand durch den Staat und verteilt diese unter sich. Der äußere Kreis umfasst alle anderen; ihr Mitwirken beschränkt sich in Nordkorea auf bloßen Götzendienst. Die Stärke und Stabilität des nordkoreanischen Systems beruht darauf, traditionelle Legitimitätsformen mit modernen Strukturen zu verbinden, wobei der Führer das Bindeglied darstellt.<a class="source-btn" href="https://www.bmlv.gv.at/pdf_pool/publikationen/nordkoreas_politische_und_strategische_kultur_web_v2.pdf" target="_blank">Quelle</a></p>
+    </div>
+
+    <div class="content-block">
+      <h3>Kooptation – Eingliederung und Einbindung</h3>
+      <p><img src="img/img10.png" alt="Massenspiele (Arirang-Festival) im Stadion von Pjöngjang" style="width:150px; float:right; margin:0 0 5px 10px;" />Die nordkoreanische Führung nutzt Propaganda und gezielte Manipulation, um die Bevölkerung zu beeinflussen und ihre Loyalität zu sichern. Die Verbreitung von Informationen wird streng kontrolliert und zensiert, sodass in den Medien ausschließlich positive Darstellungen der Regierung erscheinen. Kritik am Regime wird im Keim erstickt – Gegner werden unterdrückt und sogar verfolgt.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Propaganda und Feindbilder</h2>
+    <div>
+      <div>  
+        <h3>Feindbilder in Nordkorea</h3>
+        <p>Die nordkoreanische Diktatur stilisiert bestimmte Länder und Gruppen zu Feindbildern. Allen voran gelten die USA als Hauptfeind – in offiziellen Medien werden sie als "imperialistische Monster" diffamiert. Aber auch Südkorea, "Kapitalisten" im Allgemeinen sowie vermeintliche innere "Verräter" werden propagandistisch bekämpft.</p>
+        <img src="img/img11.png" alt="Nordkoreanisches Propagandaplakat gegen die USA" width="500" height="400">
+        <p><a href="https://www.bridgemanimages.com/de/noartistknown/korea-north-korean-dprk-propaganda-poster-tear-up-the-american-flag/nomedium/asset/1171930" target="_blank">Bildquelle: Wikimedia Commons – Nordkoreanisches Propagandaplakat (1950er)</a></p>
+        <div class="analyse">
+          <strong>Analyse:</strong> Auf dem abgebildeten Plakat zerreißt eine nordkoreanische Bürgerin die US-Flagge. Die USA werden als schwach und den Nordkoreanern unterlegen dargestellt. Die übergroß dargestellte Frau symbolisiert die Stärke und moralische Überlegenheit Nordkoreas.
+        </div>
+      </div>
+
+      <div>  
+        <h3>Hintergrund der Propaganda</h3>
+        <p>Propaganda ist eines der zentralen Herrschaftsinstrumente der nordkoreanischen Führung. Sie dient nicht nur der Verherrlichung der Kim-Familie, sondern auch der ideologischen Abschottung des Volkes und der Aufrechterhaltung eines ständigen Ausnahmezustands. Seit der Staatsgründung 1948 setzt das Regime auf eine Mischung aus Personenkult, nationalistischem Pathos und der Konstruktion von Feindbildern, um die Bevölkerung unter Kontrolle zu halten.</p>
+      </div>
+
+      <div>
+        <h3>Das Feindbild USA</h3>
+        <p>Insbesondere die USA werden vom Regime zum Erzfeind erklärt. In Schulbüchern, Filmen und auf Plakaten werden Amerikaner als brutal, unmenschlich und hinterhältig dargestellt. Diese Feindbildkonstruktion geht auf den Koreakrieg (1950–1953) zurück, in dem die USA Südkorea militärisch unterstützten. Bis heute beschreibt die nordkoreanische Propaganda die Vereinigten Staaten als gierige Aggressoren, die das koreanische Volk unterdrücken und versklaven wollen.</p>
+      </div>
+      
+      <div>
+        <h3>Propaganda in den Medien</h3>
+        <p><strong>Parteizeitung "Rodong Sinmun":</strong> In unzähligen Artikeln bezeichnet das Parteiorgan der Arbeiterpartei die USA regelmäßig als "Hauptfeind" und beschuldigt Washington, das koreanische Volk spalten zu wollen.</p>
+        <div class="analyse">
+          <strong>Analyse:</strong> Die Sprache solcher Artikel ist stark emotionalisiert. Begriffe wie "imperialistischer Erzfeind" oder "bösartiger Aggressor" zeichnen ein klares Schwarz-Weiß-Bild. Eine objektive Berichterstattung findet nicht statt.
+        </div>
+        <p><strong>Propagandafilm "The Bloody USA" (1986):</strong> Dieser staatliche Propagandafilm zeigt angebliche US-Kriegsverbrechen und betont das Leid der nordkoreanischen Bevölkerung während des Koreakriegs. Er stellt das nordkoreanische Regime als einzigen Beschützer dar.</p>
+        <div class="analyse">
+          <strong>Analyse:</strong> Der Film vermischt Fakten mit drastischen Bildern und pathetischer Musik, um starke Emotionen zu wecken. Das Ziel ist, Hass auf die USA zu schüren und die Bevölkerung in Angst und Abhängigkeit vom Regime zu halten.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Aufarbeitung der Diktatur</h2>
+    <div>
+      <h3>Zeitzeugin: Yeonmi Park</h3>
+      <p><img src="img/img12.png" alt="Yeonmi Park spricht auf einer Konferenz" style="width:150px; float:left; margin:0 10px 5px 0;" />Eine der bekanntesten nordkoreanischen Dissidentinnen ist <strong>Yeonmi Park</strong>. Sie floh im Alter von 13 Jahren aus Nordkorea und berichtete 2014 auf dem One Young World Summit eindrücklich von ihren Erlebnissen. Sie schilderte Hungersnot, öffentliche Hinrichtungen und ein Leben in ständiger Angst. Besonders eindringlich waren ihre Worte: "Wir durften nicht denken, nicht fühlen, nicht sagen, was wir wollten." Park sprach klar und emotional, rang hörbar mit den Tränen – ihre ganze Körpersprache machte das Ausmaß ihrer Traumatisierung deutlich.</p>
+    </div>
+
+    <div>
+      <h3>Aufarbeitung heute</h3>
+      <p>Im Inneren Nordkoreas findet bis heute keine Aufarbeitung der Verbrechen statt – das Regime herrscht ungebrochen weiter. International hingegen wird versucht, das Unrecht zu dokumentieren: UN-Untersuchungsberichte haben detailliert Zeugnis über die Menschenrechtsverletzungen in Nordkorea abgelegt. In Südkorea sammeln Archive und Organisationen die Aussagen von Geflüchteten. Menschenrechtsorganisationen wie die <strong>Transitional Justice Working Group (TJWG)</strong> kartieren Hinrichtungsstätten und Massengräber. Doch echte juristische Konsequenzen fehlen bislang: Initiativen, nordkoreanische Verantwortliche vor internationale Gerichte zu bringen, scheitern meist am Veto einflussreicher Staaten wie China.</p>
+    </div>
+
+    <div>
+      <h3>Beurteilung</h3>
+      <p>Die internationale Aufarbeitung wirft ein Schlaglicht auf die Verbrechen und gibt den Opfern eine Stimme – doch allein dadurch ändern sich die Verhältnisse in Nordkorea nicht. Weder erfahren die Täter Gerechtigkeit, noch verbessert sich die Lage der Bevölkerung spürbar. Langfristig wären mehr internationaler Druck, umfassende Aufklärung und eine Vorbereitung auf einen möglichen Wandel nötig, um das nordkoreanische Regime zur Verantwortung zu ziehen und einen echten Umbruch herbeizuführen.</p>
+    </div>
+
+    <br><br>
+    <h2>Fazit</h2>
+    <p>Die allgegenwärtige Propaganda in Nordkorea stärkt die innere Kontrolle des Regimes, rechtfertigt dessen militärische Stärke und zementiert die Abschottung von der Außenwelt. Durch das Schüren von Feindbildern hält die Führung die eigene Bevölkerung in Angst und Unwissenheit – fern von alternativen Weltbildern und potenziellen Aufbegehren.</p>
+  </section>
+
   <footer>
-    Quellen sind direkt bei den Inhalten verlinkt. | <a href="Diktatur-Nordkorea.pdf" target="_blank" class="pdf-link">Mehr Informationen als PDF</a>
+    Quellen sind direkt bei den Inhalten verlinkt. |
+    <a href="Diktatur-Nordkorea.pdf" target="_blank" class="pdf-link">Mehr Informationen als PDF</a>
   </footer>
-
-  <script>
-    const timelineData = [
-      { year:   "1910", text: "Japan annektiert Korea", source: "https://de.wikipedia.org/wiki/Japan-Korea-Annexionsvertrag_von_1910"},
-      { year:   "1945", text: "Teilung Koreas nach dem Zweiten Weltkrieg", source: "https://www.deutschlandfunk.de/teilung-koreas-1945-grundstein-eines-konflikts-der-bis-100.html",},
-      { year:   "1948", text: "Gründung der Demokratischen Volksrepublik Korea (Nordkorea)", source: "https://de.wikipedia.org/wiki/Nordkorea#Geschichte",},
-      { year:   "1950", text: "Nordkorea startet den Koreakrieg", source: "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/korea-krieg.html",},
-      { year:   "1953", text: "Waffenstillstand und Einrichtung der DMZ", source: "https://de.wikipedia.org/wiki/Demilitarisierte_Zone_(Korea)",},
-      { year:   "1972", text: "Kim Il-sung wird Präsident, Juche-Ideologie gefestigt", source: "https://de.wikipedia.org/wiki/Kim_Il-sung#Staatspr%C3%A4sident_und_Chuch%E2%80%99e-Ideologie",},
-      { year:   "1994", text: "Tod von Kim Il-sung, Machtübergabe an Kim Jong-il", source: "https://de.wikipedia.org/wiki/Nordkorea#Geschichte",},
-      { year:   "2006", text: "Erster unterirdischer Atomtest Nordkoreas", source: "https://www.tagesschau.de/multimedia/sendung/tagesthemen/video-ts-35604.html#atomtest2006",},
-      { year:   "2011", text: "Tod Kim Jong-ils, Nachfolger Kim Jong-un", source: "https://de.wikipedia.org/wiki/Nordkorea#Geschichte", },
-      { year:   "2017", text: "Interkontinentalraketentest und stärkster Atomwaffentest", source: "https://www.zeit.de/politik/2017-09/nordkorea-kim-jong-un-raketentest-wasserstoffbombe",},
-      { year:   "2018", text: "Gipfeltreffen mit Südkorea und USA", source: "https://www.britannica.com/biography/Kim-Jong-Eun#2018-summits",},
-      { year:   "2022", text: "Nordkorea erklärt sich offiziell zur irreversiblen Atommacht", source: "https://www.tagesschau.de/ausland/asien/nordkorea-atomwaffenpolitik-101.html",},
-      { year:   "2024", text: "Ziel der Wiedervereinigung wird aus Verfassung gestrichen", source: "https://www.tagesspiegel.de/internationales/wiedervereinigung-nicht-mehr-moglich-kim-jong-un-will-sudkorea-in-verfassung-als-hauptfeind-verankern-11056801.html"},
-    ];
-
-    const profiles = {
-      kimIlsung: `
-        <img src="img/Kim-Il-sung.png" alt="Kim Il-sung">
-        <h3>Kim Il-sung (1912–1994)</h3>
-        <p>Kim Il-sung war der Gründer Nordkoreas und regierte das Land von 1948 bis zu seinem Tod 1994 als
-        erster "Großer Führer". Nach dem Zweiten Weltkrieg errichtete er mit Unterstützung der Sowjetunion
-        eine kommunistische Diktatur. Er schuf ein System, in dem nur eine Partei herrschte und er selbst
-        wie eine göttliche Figur verehrt wurde. Seine Ideologie, die er <a href='https://de.wikipedia.org/wiki/Juche' target='_blank'>"Juche"</a> nannte, betonte die
-        Unabhängigkeit und Selbstständigkeit Nordkoreas. Um seine Macht zu festigen, verbannte er
-        Tausende Menschen in Arbeitslager und ließ politische Gegner verfolgen. Vor seinem Tod
-        bereitete er die Machtübergabe an seinen Sohn Kim Jong-il vor und begründete damit die
-        Herrschaft der Kim-Familie, die bis in die Gegenwart andauert.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Il-sung' target='_blank'>Quelle</a></p>
-      `,
-      kimJongil: `
-        <img src="img/Kim-Jong-Il.png" alt="Kim Jong-il">
-        <h3>Kim Jong-il (1941–2011)</h3>
-        <p>Kim Jong-il, der Sohn Kim Il-sungs, trat 1994 als "Geliebter Führer" die Nachfolge an und regierte
-        bis zu seinem Tod 2011. In den 1990er-Jahren durchlebte Nordkorea eine <a href='https://de.wikipedia.org/wiki/Hungersnot_in_Nordkorea_1994%E2%80%931998' target='_blank'>verheerende Hungersnot</a>,
-        als die Sowjetunion ihre Unterstützung einstellte. Trotz dieser schweren Krise beharrte Kim Jong-il
-        auf dem strengen diktatorischen Kurs. Er erhob das Militär zum wichtigsten Pfeiler des Staates
-        und stattete es mit umfangreichen Mitteln aus. Während seiner Herrschaft begann Nordkorea mit
-        der Entwicklung von Atomwaffen und führte 2006 den ersten <a href='https://de.wikipedia.org/wiki/Nordkoreanisches_Kernwaffenprogramm#Kernwaffentests' target='_blank'>Atomtest</a> durch. Die Bevölkerung
-        lebte unter ständiger Beobachtung und war jeglicher politischer Rechte beraubt. Nach seinem Tod
-        übernahm sein Sohn Kim Jong-un die Macht.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Jong-il' target='_blank'>Quelle</a></p>
-      `,
-      kimJongun: `
-        <img src="img/Kim-Jong-un.png" alt="Kim Jong-un">
-        <h3>Kim Jong-un (geb. 1984)</h3>
-        <p>Kim Jong-un trat 2011 im zarten Alter von 27 Jahren die Nachfolge seines Vaters an. Um seine
-        Herrschaft zu festigen, ließ er 2013 seinen eigenen Onkel <a href='https://en.wikipedia.org/wiki/Jang_Song-thaek' target='_blank'>Jang Song-thaek</a> hinrichten, der angeblich
-        gegen ihn konspiriert hatte. Unter seiner Führung entwickelte Nordkorea Raketen, die andere
-        Kontinente erreichen können, und erklärte sich 2022 zur Atommacht. Im Jahr 2018 kam es zu
-        historischen Gipfeltreffen mit den Präsidenten Südkoreas und der USA, doch blieben konkrete
-        Verbesserungen aus. Wie seine Vorgänger führt er eine unerbittliche Diktatur: Die Bevölkerung
-        steht unter ständiger Überwachung, Kritiker verschwinden in Arbeitslagern, und Meinungsfreiheit
-        ist nicht existent. Nordkorea zählt weiterhin zu den Ländern mit den massivsten Einschränkungen
-        der Menschenrechte.<a class='source-btn' href='https://de.wikipedia.org/wiki/Kim_Jong-un' target='_blank'>Quelle</a></p>
-      `
-    };
-
-    const timelineEl = document.getElementById("timeline");
-    timelineData.forEach(event => {
-      const entry = document.createElement("div");
-      entry.className = "timeline-entry";
-      entry.innerHTML = `<h3>${event.year}</h3><p>${event.text} <a class='source-btn' href='${event.source}' target='_blank'>Quelle</a></p>`;
-      timelineEl.appendChild(entry);
-    });
-
-    document.getElementById("kimIlsung").innerHTML = profiles.kimIlsung;
-    document.getElementById("kimJongil").innerHTML = profiles.kimJongil;
-    document.getElementById("kimJongun").innerHTML = profiles.kimJongun;
-  </script>
 </body>
 </html>

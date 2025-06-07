@@ -253,4 +253,53 @@ a:hover {
     background-color: #cccccc; /* Color matching the classic palette */
     margin: 4rem auto; /* Vertical spacing and centering */
     width: 50%; /* Width of the divider line */
+}
+
+.content-block {
+  background: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #5a6a7a;
+}
+
+.content-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.content-block h3 {
+  color: #5a6a7a;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.content-block p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.content-block p:last-child {
+  margin-bottom: 0;
+}
+
+.content-block img {
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-block img:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+
+.content-block .source-btn {
+  margin-left: 0.5rem;
 } 
